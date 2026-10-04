@@ -1,0 +1,40 @@
+"VertexLitGeneric"
+{
+    "$basetexture" "bo7\scotia\mag\556n_rgb"
+    "$bumpmap" "bo7\scotia\mag\556n_n"
+    "$phongexponenttexture" "bo7\scotia\mag\556n_e"
+
+    /////////////////
+    "$color2" "[0 0 0]"                                     //do not touch this
+    "$blendtintbybasealpha" "1"                             //do not touch this
+    /////////////////
+
+    "$phong" "1"
+    "$phongboost" "1"
+    "$phongalbedotint" "1"
+    "$phongalbedoboost" "10"                                //toy around with this
+    "$phongfresnelranges" "[1 0.1 0]"
+
+    //rimlight doesn't properly show in hlmv, make sure you're changing these values in game
+    "$rimlight" "1"
+    "$rimlightexponent" "100"
+    "$rimmask" "1"
+    "$rimlightboost" "1"
+       
+    /////////////////
+    "$normalmapalphaenvmapmask" "1"                         //do not touch this
+    /////////////////
+
+    //remove this if not using MWB
+    "Proxies"
+    {
+        "MwEnvMapTint"
+        {
+            "specularity" "0.5"             //0.25, 0.5, 0.75, 1
+            "envmap"	"viper/shared/envmaps/metal_generic_006"
+            "color"	"[0.425 0.3 0.08]"
+            "min" "0"
+            "max" "0.6"                       //change this if too bright in game
+        }
+    }
+}
